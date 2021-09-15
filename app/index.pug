@@ -1,0 +1,25 @@
+extends pug/layout/main
+
+block variables
+	- var pageTitle = 'Главная страница'
+
+block header
+	include pug/modules/common/header
+	include pug/modules/common/sidebar
+
+block content
+	include pug/modules/blocks/about
+
+block footer
+	include pug/modules/common/footer
+
+block scripts
+	//- script(src="js/jquery.min.js") // for example
+	//- script(src="js/slick.min.js") // for example
+	//- script(src="js/plagins.js") // for example
+	script(src="js/scripts.js")
+
+
+block styles
+	//- link(rel="stylesheet" href="css/slick.min.css") // for example
+	link(rel="stylesheet" href="css/main.css")
