@@ -1,19 +1,22 @@
 // common variables
-	// $widthContent: 980px;
-	// $fzText: 16px;
-	// $ffMain: "Roboto";
+// $widthContent: 980px;
+// $fzText: 16px;
+// $ffMain: "Roboto";
 
 // -- Group colors -- //
-	//colors text
-		// $colorTitle: black;
-		// $colorSubtitle: grey;
-		// $colorText: orange;
-		// $colorLinkNav: blue;
-		// $colorTextBtn: green;
-		// $colorTextBtnDark: violet;
+//colors text
+$colorMain: #fff; // Если цвет преобладает в разных элементах сайта, то используем эту переменную глобально
+$colorHeader: #969696;
+$colorFooter: #d0d0d0;
+// $colorTitle: black;
+// $colorSubtitle: grey;
+// $colorText: orange;
+// $colorLinkNav: blue;
+// $colorTextBtn: green;
+// $colorTextBtnDark: violet;
 
-	//colors background
-		// $colorBg: white;
+//colors background
+// $colorBg: white;
 
-	//colors border
-		// $colorBorder: red;
+//colors border
+// $colorBorder: red;
