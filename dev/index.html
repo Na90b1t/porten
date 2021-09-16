@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main page</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-	<h1>Hello</h1>
+
+<body class="body">
+    <header class="header body__header">
+        <div class="burger">
+            <div class="burger__line"></div>
+        </div>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="index.html">link 1</a></li>
+                <li class="menu__item"><a class="menu__link" href="#about">link 2</a></li>
+            </ul>
+        </nav><button class="header__btn" type="button">Button</button>
+    </header>
+    <main class="content body__content">
+        <section class="about content__about" id="about">
+            <h2 class="subtitle about__subtitle">Subtitle</h2>
+            <p class="text about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis consectetur error modi suscipit excepturi corporis illum!
+                At eaque voluptatem fugiat, doloremque voluptates autem ratione quas iusto impedit accusantium illo porro?
+                Optio repudiandae vel eligendi aliquid dolorem quaerat voluptatem, aut labore soluta quod ea!</p>
+        </section>
+    </main>
+    <footer class="footer content__footer"></footer>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
