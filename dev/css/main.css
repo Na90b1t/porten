@@ -72,33 +72,32 @@ html
     height: 100%;
 }
 
-/* roboto-regular - latin */
+/* Post-No-Bills-Jaffna - Bold */
 @font-face
 {
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-style: normal;
-
-    src: local('Roboto'), local('Roboto-Regular'), url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), url('../fonts/roboto/roboto-v20-latin-regular.woff') format('woff');
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* roboto-700 - latin */
-@font-face
-{
-    font-family: 'Roboto';
+    font-family: 'PostNoBillsJaffna-Bold';
     font-weight: 700;
     font-style: normal;
 
-    src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/roboto-v20-latin-700.woff2') format('woff2'), url('../fonts/roboto-v20-latin-700.woff') format('woff');
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: url('../fonts/PostNoBillsJaffna-Bold.woff2') format('woff2'), url('../fonts/roboto/PostNoBillsJaffna-Bold.woff') format('woff');
 }
 
 .header
 {
     background-color: #000;
 }
-.header__row,
+.header__row
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
 .header__block
 {
     display: -webkit-box;
@@ -106,30 +105,57 @@ html
     display: -ms-flexbox;
     display:         flex;
 }
-.header__row
+.header__text
 {
-    height: 44px;
+    font-size: 12px;
+    line-height: calc(16 / 12 * 100%);
 
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-            justify-content: space-around;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    padding: 5px; 
+
+    color: #969696;
 }
-.header__block
+.header__text::after
 {
-    height: 100%;
+    display: block;
 
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-            justify-content: center;
+    width: 2px;
+    height: 12px;
+    margin: 0 5px; 
+
+    content: '';
+
+    color: red;
+}
+
+.text_icon::before
+{
+    display: block;
+
+    width: 13px;
+    height: 13px;
+
+    content: '';
+
+    background-image: url('data:image/svg+xml,%3Csvg width=\'14\' height=\'14\' viewBox=\'0 0 14 14\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M10.6 13.6667C7.87817 13.6631 5.26886 12.5803 3.34425 10.6557C1.41964 8.73112 0.336841 6.1218 0.333313 3.39999C0.333313 2.58666 0.656407 1.80665 1.23152 1.23153C1.80663 0.656423 2.58665 0.333328 3.39998 0.333328C3.57221 0.332016 3.74415 0.347647 3.91331 0.379995C4.07685 0.404195 4.23762 0.444388 4.39331 0.499995C4.50281 0.538414 4.60039 0.60475 4.67639 0.692443C4.75239 0.780136 4.80418 0.886147 4.82665 0.999995L5.73998 4.99999C5.7646 5.10857 5.76163 5.22158 5.73136 5.32872C5.70108 5.43585 5.64445 5.5337 5.56665 5.61333C5.47998 5.70666 5.47331 5.71333 4.65331 6.13999C5.30998 7.58057 6.46211 8.73743 7.89998 9.39999C8.33331 8.57333 8.33998 8.56666 8.43331 8.47999C8.51294 8.40219 8.61079 8.34556 8.71792 8.31528C8.82506 8.28501 8.93807 8.28204 9.04665 8.30666L13.0466 9.21999C13.1568 9.24556 13.2587 9.29876 13.3427 9.37457C13.4267 9.45037 13.49 9.5463 13.5266 9.65333C13.5829 9.81157 13.6253 9.9744 13.6533 10.14C13.6801 10.3075 13.6935 10.477 13.6933 10.6467C13.681 11.4565 13.3488 12.2286 12.7693 12.7944C12.1897 13.3602 11.4099 13.6738 10.6 13.6667ZM3.39998 1.66666C2.94081 1.66842 2.50095 1.8516 2.17627 2.17628C1.85158 2.50097 1.6684 2.94083 1.66665 3.39999C1.66841 5.76872 2.61017 8.03992 4.28511 9.71486C5.96005 11.3898 8.23125 12.3316 10.6 12.3333C11.0591 12.3316 11.499 12.1484 11.8237 11.8237C12.1484 11.499 12.3316 11.0592 12.3333 10.6V10.38L9.23998 9.66666L9.04665 10.0333C8.74665 10.6133 8.52665 11.0333 7.96665 10.8067C6.8619 10.4112 5.85911 9.77468 5.03114 8.94325C4.20316 8.11181 3.5708 7.10638 3.17998 5.99999C2.93998 5.47999 3.39331 5.23999 3.96665 4.93999L4.33331 4.75999L3.61998 1.66666H3.39998Z\' fill=\'%23969696\'/%3E%3C/svg%3E%0A');
+}
+
+.text_icon
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
 }
 
 .body
 {
+    font-size: 16px; 
+
     position: relative;
 
     display: -webkit-box;
@@ -142,7 +168,7 @@ html
     max-width: 100vw;
     min-height: 100vh;
 
-    color: #fff; 
+    color: #fff;
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -156,6 +182,43 @@ html
     -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
+}
+
+._container
+{
+    width: 100%;
+    max-width: 1010px;
+    margin: 0 auto;
+}
+
+_.ibg
+{
+    position: relative;
+}
+_.ibg img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.title
+{
+    font-family: 'PostNoBillsJaffna-Bold';
+    font-family: 'PT Sans';
+    font-size: 36px;
+    font-weight: 400;
+
+    text-align: center;
+    text-transform: uppercase; 
+
+    color: red;
 }
 
 .about__subtitle

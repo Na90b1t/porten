@@ -7,9 +7,38 @@
 	overflow-x: hidden;
 	color: $colorMain;
 	// font-family: $ffMain;
-	// font-size: $fzText;
+	font-size: $fzText;
 }
 
 .content {
 	flex: 1 1 auto; // для прижатого к низу футера
+}
+
+._container {
+	width: 100%;
+	max-width: 1010px;
+	margin: 0 auto;
+}
+
+_.ibg {
+	position: relative;
+
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+
+.title {
+	font-family: 'PostNoBillsJaffna-Bold';
+	font-family: 'PT Sans';
+	color: red;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 400;
+	text-transform: uppercase;
 }

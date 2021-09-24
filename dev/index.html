@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:regular&amp;display=swap&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,700&amp;display=swap&amp;subset=cyrillic-ext" rel="stylesheet">
     <title>Main page</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body class="body">
     <header class="header body__header">
-        <div class="header__row">
-            <div class="header__block">
-                <p>8 (812) 123-45-67 |</p>
-                <p>Работаем 7 дней в неделю |</p>
-                <p>9:00 — 18:00</p>
+        <div class="_container">
+            <div class="header__row">
+                <div class="header__block header__block_timetable">
+                    <p class="header__text text_icon">8 (812) 123-45-67</p>
+                    <p class="header__text">Работаем 7 дней в неделю</p>
+                    <p class="header__text">9:00 — 18:00</p>
+                </div>
+                <div class="header__block header__block_reg">
+                    <p class="header__text">Войти /</p>
+                    <p class="header__text">Регистрация</p>
+                </div>
             </div>
-            <div class="header__block">
-                <p>Войти /</p>
-                <p>Регистрация</p>
-            </div>
+            <div class="header__row"></div>
         </div>
     </header>
     <main class="content body__content">
+        <h1 class="title">Porten</h1>
         <section class="about content__about" id="about">
             <h2 class="subtitle about__subtitle">Subtitle</h2>
             <p class="text about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.

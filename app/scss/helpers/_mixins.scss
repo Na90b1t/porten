@@ -46,8 +46,15 @@
 	}
 }
 
-@mixin psevdo {
-	@include abs-cen;
+@mixin psevdo{
+	content: "";
+	& {
+		@content;
+	}
+}
+
+@mixin psevdo-abs-centr{
+	@include abs-centr;
 	content: "";
 	width: 100%;
 	height: 100%;
