@@ -1,13 +1,13 @@
 // common variables
 // $widthContent: 980px;
-$fzText: 16px;
-// $ffMain: "Roboto";
+$fzMain: 16px;
+$ffMain: "PT Sans";
 
 // -- Group colors -- //
 //colors text
-$colorMain: #fff; // Если цвет преобладает в разных элементах сайта, то используем эту переменную глобально
-$colorHeader: #969696;
-$colorFooter: #d0d0d0;
+$colorTextMain: #fff; // Если цвет преобладает в разных элементах сайта, то используем эту переменную глобально
+$colorTextHeader: #969696;
+$colorTextFooter: #d0d0d0;
 // $colorTitle: black;
 // $colorSubtitle: grey;
 // $colorText: orange;
