@@ -12,24 +12,38 @@
 </head>
 
 <body class="body">
-    <header class="header body__header">
-        <div class="_container">
-            <div class="header__row header__row_top">
+    <header class="header">
+        <div class="header__row-top">
+            <div class="header__row _container">
                 <div class="header__block header__block_timetable">
                     <p class="header__text header__line header__icon header__icon_call">8 (812) 123-45-67</p>
                     <p class="header__text header__line">Работаем 7 дней в неделю</p>
                     <p class="header__text">9:00 — 18:00</p>
                 </div>
-                <div class="header__block header__block_reg">
-                    <p class="header__text header__icon header__icon_enter">Войти</p>
-                    <p class="header__text header__slash">Регистрация</p>
+                <div class="header__block header__block_auth-reg">
+                    <p class="header__text header__text_hover header__icon header__icon_enter">Войти</p>
+                    <p class="header__text header__text_hover header__slash">Регистрация</p>
                 </div>
             </div>
-            <div class="header__row header__row_bottom"></div>
+        </div>
+        <div class="header__row-bottom">
+            <div class="header__row _container">
+                <h1 class="header__logo title">Porten</h1>
+                <nav class="user-nav">
+                    <ul class="user-nav__list">
+                        <li class="user-nav__item"><a class="user-nav__link" href="#">Понравилось</a></li>
+                        <li class="user-nav__item"><a class="user-nav__link" href="#">Личный кабинет</a></li>
+                        <li class="user-nav__item"><a class="user-nav__link" href="#">Настройки</a></li>
+                    </ul>
+                    <ul class="user-nav__list">
+                        <li class="user-nav__item"><a class="user-nav__link user-nav__link_icon header__icon header__icon_basket" href="#"></a></li>
+                        <li class="user-nav__item"><a class="user-nav__link user-nav__link_icon header__icon header__icon_search" href="#"></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="content body__content">
-        <h1 class="title">Porten</h1>
         <section class="about content__about" id="about">
             <h2 class="subtitle about__subtitle">Subtitle</h2>
             <p class="text about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.

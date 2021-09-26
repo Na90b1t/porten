@@ -46,19 +46,45 @@
 	}
 }
 
-@mixin psevdo{
-	content: "";
+@mixin psevdo {
+	content: '';
 	& {
 		@content;
 	}
 }
 
-@mixin psevdo-abs-centr{
+@mixin psevdo-abs-centr {
 	@include abs-centr;
-	content: "";
+	content: '';
 	width: 100%;
 	height: 100%;
 	& {
 		@content;
 	}
 }
+
+// // for pf/px
+// .body {
+// 	// width: 1920px;
+// 	// min-height: 5273px !important;
+// 	&::before {
+// 		content: '';
+// 		position: absolute;
+// 		top: 0;
+// 		left: 50%;
+// 		transform: translateX(-50%);
+// 		width: 100%; // Для наглядности
+// 		width: 1920px;
+// 		height: 5273px;
+// 		background: url('../img/travel.jpg') no-repeat top center / contain;
+// 		pointer-events: none;
+// 		opacity: 0.4;
+// 		// opacity: 0;
+// 		z-index: 2;
+// 		display: none;
+
+// 		@media screen and (width: 1920px) {
+// 			display: block;
+// 		}
+// 	}
+// }
