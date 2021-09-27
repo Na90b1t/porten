@@ -8,6 +8,7 @@
 	color: $colorTextMain;
 	font-family: $ffMain;
 	font-size: $fzMain;
+	line-height: $lhMain;
 
 	// width: 1920px;
 	// min-height: 4357px !important;
@@ -38,6 +39,14 @@
 
 .content {
 	flex: 1 1 auto; // для прижатого к низу футера
+
+	&__main-banner {
+		padding-top: 160px;
+
+		@media (max-width: 567px) {
+			padding-top: 80px;
+		}
+	}
 }
 
 ._container {
@@ -62,7 +71,7 @@ _.ibg {
 
 .title {
 	font-family: 'PostNoBillsJaffna-Bold';
-	// font-family: 'PT Sans';
+
 	color: $colorTextMain;
 	text-align: center;
 	font-size: 36px;
@@ -73,7 +82,31 @@ _.ibg {
 		font-size: 30px;
 	}
 
-	// @media (max-width: 567px) {
-	// 	font-size: 26px;
-	// }
+	&_large {
+		font-size: 64px;
+
+		@media (max-width: 567px) {
+			font-size: 44px;
+		}
+	}
+
+	&_decor_line {
+		&::after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: #fff;
+		}
+	}
+}
+
+.subtitle {
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+
+	@media (max-width: 567px) {
+		font-size: 18px;
+	}
 }

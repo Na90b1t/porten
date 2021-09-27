@@ -306,13 +306,29 @@ html
                 justify-content: center;
     }
 }
+.user-nav__item
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
 .user-nav__link
 {
     font-size: 14px;
 
     display: block;
 
-    padding: 30px 20px; 
+    padding: 29px 20px; 
 
     text-transform: uppercase;
 
@@ -359,7 +375,8 @@ html
 .body
 {
     font-family: 'PT Sans';
-    font-size: 16px; 
+    font-size: 16px;
+    line-height: 1; 
 
     position: relative;
 
@@ -419,6 +436,17 @@ html
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
 }
+.content__main-banner
+{
+    padding-top: 160px;
+}
+@media (max-width: 567px)
+{
+    .content__main-banner
+    {
+        padding-top: 80px;
+    }
+}
 
 ._container
 {
@@ -463,15 +491,133 @@ _.ibg img
         font-size: 30px;
     }
 }
-
-.about__subtitle
+.title_large
 {
-    margin-bottom: 40px;
+    font-size: 64px;
+}
+@media (max-width: 567px)
+{
+    .title_large
+    {
+        font-size: 44px;
+    }
+}
+.title_decor_line::after
+{
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    content: '';
+
+    background-color: #fff;
 }
 
-.about__text
+.subtitle
 {
-    margin: 0 auto;
+    font-size: 22px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+}
+@media (max-width: 567px)
+{
+    .subtitle
+    {
+        font-size: 18px;
+    }
+}
+
+.main-banner
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    width: 100%;
+    height: 810px;
+
+    background: no-repeat center/cover;
+    background-image: url(../img/banner_man-in-coat.jfif);
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+@media (max-width: 567px)
+{
+    .main-banner
+    {
+        height: 610px;
+    }
+}
+.main-banner__block
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    width: 320px;
+    height: 320px;
+    margin-bottom: 80px; 
+
+    border: 3px solid #fff;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+@media (max-width: 567px)
+{
+    .main-banner__block
+    {
+        width: 260px;
+        height: 260px;
+        margin-bottom: 60px;
+    }
+}
+.main-banner__title
+{
+    margin-bottom: 13px;
+}
+.main-banner__text
+{
+    line-height: 24px;
+
+    max-width: 730px;
+    margin: 0 50px; 
+
+    text-align: center;
+    text-transform: uppercase;
+}
+@media (max-width: 567px)
+{
+    .main-banner__text
+    {
+        font-size: 12px;
+        line-height: 18px;
+
+        margin: 0 40px;
+    }
 }
 
 .footer
