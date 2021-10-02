@@ -8,7 +8,6 @@
 	color: $colorTextMain;
 	font-family: $ffMain;
 	font-size: $fzMain;
-	line-height: $lhMain;
 }
 
 .content {
@@ -30,7 +29,7 @@
 	padding: 0 10px;
 }
 
-_.ibg {
+._ibg {
 	position: relative;
 
 	img {
@@ -54,6 +53,7 @@ _.ibg {
 
 	@media (max-width: 767px) {
 		font-size: 30px;
+		line-height: 48px;
 	}
 
 	&_large {
@@ -69,7 +69,7 @@ _.ibg {
 			content: '';
 			display: block;
 			width: 100%;
-			height: 1px;
+			height: 2px;
 			background-color: #fff;
 		}
 	}

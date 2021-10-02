@@ -1,16 +1,16 @@
 .header {
 	background-color: #000;
 
-	&__row {
+	&__wrap {
 		display: flex;
 		justify-content: space-between;
 	}
 
-	&__row-top {
+	&__block-contacts {
 		padding: 9px 0;
 	}
 
-	&__row-bottom {
+	&__block-user {
 		background-color: #0f0f0f;
 	}
 
@@ -154,19 +154,23 @@
 	}
 
 	&__link {
-		display: block;
+		display: flex;
+		align-items: center;
+		height: 80px;
 		font-size: 14px;
 		text-transform: uppercase;
 		color: $colorTextHeader;
-		padding: 29px 20px;
+		padding: 10px 20px;
 
 		@media (max-width: 767px) {
 			font-size: 12px;
-			padding: 20px 10px;
+			line-height: 16px;
+			padding: 10px;
+			height: 70px;
 		}
 
 		@media (max-width: 567px) {
-			padding: 10px;
+			height: 40px;
 		}
 
 		&:hover {

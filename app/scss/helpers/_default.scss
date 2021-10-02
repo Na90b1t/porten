@@ -60,3 +60,18 @@ img {
 html {
 	height: 100%; // для прижатого к низу футера
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+button,
+input,
+textarea,
+a {
+	line-height: 1;
+}

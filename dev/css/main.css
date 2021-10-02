@@ -72,6 +72,22 @@ html
     height: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+button,
+input,
+textarea,
+a
+{
+    line-height: 1;
+}
+
 .body
 {
     width: 1920px;
@@ -123,7 +139,7 @@ html
 {
     background-color: #000;
 }
-.header__row
+.header__wrap
 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -135,11 +151,11 @@ html
     -ms-flex-pack: justify;
             justify-content: space-between;
 }
-.header__row-top
+.header__block-contacts
 {
     padding: 9px 0;
 }
-.header__row-bottom
+.header__block-user
 {
     background-color: #0f0f0f;
 }
@@ -363,28 +379,39 @@ html
 {
     font-size: 14px;
 
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
 
-    padding: 29px 20px; 
+    height: 80px;
+    padding: 10px 20px; 
 
     text-transform: uppercase;
 
     color: #969696;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
 }
 @media (max-width: 767px)
 {
     .user-nav__link
     {
         font-size: 12px;
+        line-height: 16px;
 
-        padding: 20px 10px;
+        height: 70px; 
+        padding: 10px;
     }
 }
 @media (max-width: 567px)
 {
     .user-nav__link
     {
-        padding: 10px;
+        height: 40px;
     }
 }
 .user-nav__link:hover
@@ -412,8 +439,7 @@ html
 .body
 {
     font-family: 'PT Sans';
-    font-size: 16px;
-    line-height: 1; 
+    font-size: 16px; 
 
     position: relative;
 
@@ -462,11 +488,11 @@ html
     padding: 0 10px;
 }
 
-_.ibg
+._ibg
 {
     position: relative;
 }
-_.ibg img
+._ibg img
 {
     position: absolute;
     top: 0;
@@ -495,6 +521,7 @@ _.ibg img
     .title
     {
         font-size: 30px;
+        line-height: 48px;
     }
 }
 .title_large
@@ -513,7 +540,7 @@ _.ibg img
     display: block;
 
     width: 100%;
-    height: 1px;
+    height: 2px;
 
     content: '';
 
@@ -603,7 +630,7 @@ _.ibg img
 }
 .main-banner__title
 {
-    margin-bottom: 13px;
+    margin-bottom: 12px;
 }
 .main-banner__text
 {
@@ -614,6 +641,16 @@ _.ibg img
 
     text-align: center;
     text-transform: uppercase;
+}
+@media (max-width: 767px)
+{
+    .main-banner__text
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        margin: 0 40px;
+    }
 }
 @media (max-width: 567px)
 {
