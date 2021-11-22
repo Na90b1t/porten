@@ -1,6 +1,7 @@
 .body {
 	width: 1920px;
 	min-height: 4357px !important;
+
 	&::before {
 		content: '';
 		z-index: 2;
