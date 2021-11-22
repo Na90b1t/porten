@@ -41,6 +41,8 @@ button
 a
 {
     text-decoration: none;
+
+    color: inherit;
 }
 
 button,
@@ -553,23 +555,33 @@ a
 {
     font-family: 'Playfair Display';
 }
-.title_decor_line::after
+.title_line::after
 {
     display: block;
 
     width: 46%;
     height: 1px;
-    margin: 46px auto 0; 
+    margin: 36px auto 0; 
 
     content: '';
 
     background-color: #fff;
 }
-.title_decor_line_large::after
+.title_line_logo::after
 {
     width: 100%;
     height: 2px;
     margin: 0;
+}
+.title_line_season::after
+{
+    width: 46%;
+    margin: 46px auto 0;
+}
+.title_line_catalog::after
+{
+    width: 32%;
+    margin: 26px auto 0;
 }
 
 .subtitle
@@ -586,6 +598,15 @@ a
     {
         font-size: 18px;
     }
+}
+
+.link
+{
+    font-family: 'PT Sans';
+    font-size: 18px;
+
+    letter-spacing: 1.6px; 
+    text-transform: uppercase;
 }
 
 .main-banner
@@ -725,16 +746,72 @@ a
 }
 .collection-season__collection
 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    width: 880px;
     height: 730px;
 
-    background: no-repeat center/contain; 
+    background: no-repeat center/cover;
     background-image: url(../img/banner_man-with-wrist-watch.jfif);
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+            align-items: flex-end;
 }
-.collection-season__wrap
+.collection-season__cards-wrap
 {
     padding-top: 50px; 
 
     background-color: black;
+}
+.collection-season__catalog-wrap
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    margin-bottom: 100px; 
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+}
+.collection-season__title-collection
+{
+    margin-bottom: 30px;
+}
+.collection-season__link
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    width: 138px;
+    height: 47px;
+    margin: 0 auto; 
+
+    border: 1px solid #fff;
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
 }
 
 .cards__row
@@ -770,8 +847,9 @@ a
 
     width: 260px;
     height: 325px;
+    margin-bottom: 29px; 
 
-    background-color: #191b1c; 
+    background-color: #191b1c;
 
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -781,11 +859,6 @@ a
     -webkit-align-items: center;
     -ms-flex-align: center;
             align-items: center;
-}
-
-.cards__description-wrap
-{
-    margin-top: 30px;
 }
 
 .cards__description
@@ -798,7 +871,7 @@ a
 }
 .cards__description_price
 {
-    margin-top: 14px;
+    margin-top: 15px;
 
     letter-spacing: .3px;
 }

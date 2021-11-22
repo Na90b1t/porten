@@ -18,14 +18,38 @@
 	}
 
 	&__collection {
+		width: 880px;
 		height: 730px;
 		background-image: url(../img/banner_man-with-wrist-watch.jfif);
-		@include bg(contain);
+		@include bg(cover);
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
 	}
 
-	&__wrap {
+	&__cards-wrap {
 		background-color: black;
 		padding-top: 50px;
+	}
+
+	&__catalog-wrap {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 100px;
+	}
+
+	&__title-collection {
+		margin-bottom: 30px;
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 138px;
+		height: 47px;
+		border: 1px solid $colorMain;
+		margin: 0 auto;
 	}
 }
 
@@ -45,11 +69,11 @@
 		width: 260px;
 		height: 325px;
 		background-color: #191b1c;
+		margin-bottom: 29px;
 	}
 
-	&__description-wrap {
-		margin-top: 30px;
-	}
+	// &__description-wrap {
+	// }
 
 	&__description {
 		font-family: 'Playfair Display';
@@ -58,7 +82,7 @@
 		}
 
 		&_price {
-			margin-top: 14px;
+			margin-top: 15px;
 			letter-spacing: 0.3px;
 		}
 	}

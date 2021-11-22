@@ -5,7 +5,7 @@
 	min-height: 100vh; // для прижатого к низу футера
 	max-width: 100vw;
 	overflow-x: hidden;
-	color: $colorTextMain;
+	color: $colorMain;
 	font-family: $ffMain;
 	font-size: $fzMain;
 	background-color: #000;
@@ -45,7 +45,7 @@
 
 .title {
 	font-family: 'PostNoBillsJaffna-Bold';
-	color: $colorTextMain;
+	color: $colorMain;
 	text-align: center;
 	font-size: 36px;
 	font-weight: 700;
@@ -68,21 +68,35 @@
 		font-family: 'Playfair Display';
 	}
 
-	&_decor_line {
+	&_line {
 		&::after {
 			content: '';
 			display: block;
 			width: 46%;
 			height: 1px;
-			background-color: #fff;
-			margin: 46px auto 0;
+			background-color: $colorMain;
+			margin: 36px auto 0;
 		}
 
-		&_large {
+		&_logo {
 			&::after {
 				width: 100%;
 				height: 2px;
 				margin: 0;
+			}
+		}
+
+		&_season {
+			&::after {
+				width: 46%;
+				margin: 46px auto 0;
+			}
+		}
+
+		&_catalog {
+			&::after {
+				width: 32%;
+				margin: 26px auto 0;
 			}
 		}
 	}
@@ -97,4 +111,11 @@
 	@media (max-width: 567px) {
 		font-size: 18px;
 	}
+}
+
+.link {
+	font-family: "PT Sans";
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1.6px;
 }

@@ -2,11 +2,11 @@
 // $widthContent: 980px;
 $fzMain: 16px;
 $lhMain: 1;
-$ffMain: "PT Sans";
+$ffMain: 'PT Sans';
 
 // -- Group colors -- //
 //colors text
-$colorTextMain: #fff; // Если цвет преобладает в разных элементах сайта, то используем эту переменную глобально
+$colorMain: #fff; // Если цвет преобладает в разных элементах сайта, то используем эту переменную глобально
 $colorTextHeader: #969696;
 $colorTextFooter: #d0d0d0;
 // $colorTitle: black;
@@ -19,5 +19,5 @@ $colorTextFooter: #d0d0d0;
 //colors background
 // $colorBg: white;
 
-//colors border
-// $colorBorder: red;
+// colors border
+// $colorBorder: white;
